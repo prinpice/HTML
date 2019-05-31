@@ -221,3 +221,87 @@
         - html만으로 구성된 서버
     - 검색창에 (free) (static)web hosting 입력하여 검색
     - ex) https://www.bitballoon.com/, http://neocities.org/, Amazon S3, Google Cloud Storage, Azure Blob
+    
+19. 웹서버 운영하기
+
+    - 내 컴퓨터에 웹서버 설치
+    - 웹 서버 제품 : Apache(오픈소스, 무료), IIs, Nginx 등등
+      - 검색창에 how to install apache http server 운영체제 검색하여 설치방법 보기
+
+20. 웹서버 운영 : 윈도우
+
+    - 윈도우에 웹서버 설치
+      - 검색창에 bitnami wamp stack 검색하여 홈페이지 들어가기
+      - Local INSTALL의 최신버전 다운로드
+      - 설치 중에 비밀번호 설정시 반드시 기억해야 함
+      - 설치 완료 후 Go to application버튼 클릭
+      - bitnami를 설치한 디렉토리 안에 manager-windows 프로그램을 실행시키면 manager 프로그램(web server의 on/off 제어) 켜짐 - 초록색인경우 켜져있음 
+    - 웹서버와 http
+      - http://127.0.0.1/index.html : local host와 같은 화면 나옴
+        - 127.0.0.1 : 특정 컴퓨터 IP주소(Internet Protocol Address)
+      - html 파일 위치 : bitnami directory -> wampstack -> htdocs(웹페이지가 저장된 곳)
+      - file://
+        - 파일에 있는 것을 직접 여는 것으로 Web Server가 관여하지 않음
+      - http://
+        - Hyper(Web page) Text Transfer(통신) Protocol(규약)
+        - Web Browser와 Web Server가 서로 통신할 때 사용하는 통신 규약을 이용하여 데이터를 가져옴
+        - Web Browser와 Web Server가 서로다른 컴퓨터에 있을 때 반드시 이를 통해 통신해야 함
+    - 웹브라우저와 웹서버의 통신
+      - Web Browser가 Web Server에 요청을 할 때 Web Server의 IP Address가 필요함
+      - 컴퓨터가 2대 필요함
+        - 스마트폰을 Web Browser로 사용할 수 있음
+      - 화면 오른쪽 하단의 Window바에서 컴퓨터모양/와이파이모양 우클릭 -> Open Network and Sharing Center/네트워크 및 인터넷 설정 열기 -> Ethernet/Wifi -> Details.. -> IPv4 Address확인(현재 컴퓨터의 IP주소)
+        - 127.0.0.1 : 현재 사용하고있는 컴퓨터( 자기 자신)(약속)
+      - 두 대의 컴퓨터가 연결되기 위해서는 같은 네트워크에 접속되어 있어야 함 => 다른 네트워크에서는 접속 불가능
+
+21. 웹서버 운영하기 : 맥
+
+    - Apache가 기본적으로 깔려있음(이 강의에서는 사용X)
+    - 맥에 웹서버 설치하기
+      - 검색엔진에 bitnami mamp stack 검색하기
+      - MAMP : Mac Apache MySQL PHP -> 3개의 프로그램이 동시에 설치됨
+      - LOCAL INSTALL 에서 최신버전 다운로드 -> 더블클릭 설치 -> 체크박스 해제 후 설치
+      - 설치 중에 비밀번호 설정시 반드시 기억해야함 
+      - Management Console
+        - 설치 완료 후 실행되는 프로그램
+        - Apache Web Server를 관리하는 프로그램
+        - Spotlight Search에서 manager-osx검색 또는 Application폴더에서 mampstack-x.x.x-> manager-osx를 클릭하여 프로그램 실행
+    - 웹서버와 http
+      - Application(응용프로그램) 폴더 -> mampstack directory -> apache2 directory -> htdocs(웹페이지가 저장된 곳)
+      - http://127.0.0.1:8080/index.html
+        - 8080
+          - PORT
+          - Mac에는 Web Server가 이미 깔려있음
+          - Web Server가 2개 이상일 경우 구별하기 위해 나중에 설치된 Web Server에 PORT를 부여함
+    - 웹브라우저와 웹서버의 통신
+      - cmd + o : 웹페이지 열기
+      - System Preference(제어판) -> Network -> 고급 -> TCPIP -> IPv4 address : 해당 컴퓨터의 IP주소
+      - 통신을 하려는 두 대의 컴퓨터가 동일 네트워크에 접속하고 있어야 함
+
+22. 웹서버 운영 : 리눅스
+
+    - 검색엔진에 apache install unubtu 검색
+    - console에서 $ sudo apt-get update
+      - sudo : 관리자 권한으로 실행
+      - apt-get : ubuntu와 같은 몇몇 운영체제에서의 앱스토어
+      - update : 설치한 프로그램을 최신 버전으로 업데이트 함
+    - console에서 $ sudo apt-get install apache2
+      - install [프로그램명] : 특정 프로그램을 설치함
+      - 설치할껀지 yes/no가 뜨면 y입력
+    - IP Address 찾기(console에서)
+      - $ hostname -I
+        - host : 인터넷에 연결되어있는 컴퓨터 한대 한대를 이름
+        - hostname : 컴퓨터의 인터넷 상의 이름
+        - -I : 해당 컴퓨터의 IP Address
+    - 두 대의 컴퓨터가 동일네트워크에 접속하고 있어야 제대로 동작함
+    - 화면에 표시된 웹페이지의 위치(console 창에서)
+      - $ cd /var/www/html
+        - cd : change directory
+      - $ ls -al
+        - 현재 디렉토리에 있는 파일 목록
+      - $ sudo mv [이름을 바꾸려는 파일명(전)] [바꾸고자 하는 파일명(후)]
+        - mv : rename
+      - $ sudo cp * [이동하고자 하는 폴더명]
+        - cp : 특정 파일을 특정 폴더로 이동
+        - \* : 해당 폴더의 모든 파일
+
