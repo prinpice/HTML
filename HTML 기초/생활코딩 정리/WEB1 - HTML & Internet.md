@@ -304,4 +304,37 @@
       - $ sudo cp * [이동하고자 하는 폴더명]
         - cp : 특정 파일을 특정 폴더로 이동
         - \* : 해당 폴더의 모든 파일
+    
+23. 수업을 마치며 1
+
+    - 기술 : 본질(essence) / 혁신(innovation)
+    - 학습 : 교양(hobby) / 직업(professional)
+    - 
+
+24. 수업을 마치며 2
+
+    - 복잡함
+      - 공부한 것을 사용하려 할 때 막막하게 함
+      - ex) \<input type="checkbox"\>를 통해 체크박스 생성
+        - 체크박스 1개일 때 테스트 : 2번
+        - 체크박스 2개일 때 테스트 : 4번
+        - 체크박스 3개일 때 테스트 : 8번
+        - ...
+        - 체크박스 50개일 때 테스트 : 2^50^ = 1,125,899,906,842,624번(1천조)
+      - 세상은 쉽게 복잡해짐
+      - 스스로 좌절할 필요 없음
+
+25. 수업을 마치며 3
+
+    - 공부의 방향 선택
+      - CSS : 웹페이지 꾸미기
+        - web publisher
+        - web designer
+      - JavaScript : 사용자와 상호작용하는 웹페이지
+        - web front end engineer
+        - web interactive designer
+      - backend기술
+        - 하나의 파일을 변경하면 일억개의 페이지가 동시에 바뀜
+        - PHP, JSP, Node.js의 express, python의 django, ruby의 ruby on rails, asp.net
+        - backend engineer
 
