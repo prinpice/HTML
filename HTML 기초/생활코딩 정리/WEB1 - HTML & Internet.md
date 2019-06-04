@@ -280,7 +280,7 @@
 
 22. 웹서버 운영 : 리눅스
 
-    - 검색엔진에 apache install unubtu 검색
+    - 검색엔진에 apache install ubuntu 검색
     - console에서 $ sudo apt-get update
       - sudo : 관리자 권한으로 실행
       - apt-get : ubuntu와 같은 몇몇 운영체제에서의 앱스토어
@@ -337,4 +337,11 @@
         - 하나의 파일을 변경하면 일억개의 페이지가 동시에 바뀜
         - PHP, JSP, Node.js의 express, python의 django, ruby의 ruby on rails, asp.net
         - backend engineer
+    
+26. 부록 : 코드의 힘 - 동영상 삽입
+
+    - youtube동영상
+      - share -> embed(source, 퍼가기) -> code를 copy하여 삽입하고자 하는 위치에 삽입하기
+    - \<iframe\>태그\<iframe\>\</iframe\>
+      - 동영상 삽입하는 태그
 
