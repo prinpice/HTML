@@ -344,4 +344,12 @@
       - share -> embed(source, 퍼가기) -> code를 copy하여 삽입하고자 하는 위치에 삽입하기
     - \<iframe\>태그\<iframe\>\</iframe\>
       - 동영상 삽입하는 태그
+    
+27. 부록 : 코드의 힘 - 채팅 기능 추가
+
+    - 방문자와의 채팅기능 
+    - www.tawk.to
+      - 로그인 후 관리자 화면에서 톱니바퀴 클릭 -> Widget Code를 원하는 위치에 copy & paste
+      - file로 시작하는 웹에서는 사용 불가능
+      - 웹서버를 사용하여 열어야 함
 
