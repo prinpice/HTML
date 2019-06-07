@@ -352,4 +352,20 @@
       - 로그인 후 관리자 화면에서 톱니바퀴 클릭 -> Widget Code를 원하는 위치에 copy & paste
       - file로 시작하는 웹에서는 사용 불가능
       - 웹서버를 사용하여 열어야 함
+    
+28. 부록 : 코드의 힘 - 방문자 분석기
+
+    - 웹사이트 방문자 분석기
+    - google analytics
+      - analytics.google.com
+      - 방문자 수 표시
+      - 로그인 후  new account
+        - Account Name : 자기 이름(실명안적어도 됨)
+          - 하나의 account안에 여러개의 웹사이트 존재 가능
+        - Website Name : website 중 하나의 이름
+        - Website URL : 운영하고 있는 website 주소
+        - Industry Category : 산업분류 - 전체에 대한 통계를 얻고싶을 때 사용
+        - Reporting Time Zone : 시간 - South Korea
+      - -> get tracking ID -> South Korea -> accept
+      - Tracking Info -> Tracking Info -> Global site Tag에 있는 code를 웹사이트 코드의 \<head\>\</head\>태그 안에 copy & paste
 
